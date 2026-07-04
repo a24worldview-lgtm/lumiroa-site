@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Framework output
+.next/
+out/
+dist/
+build/
+.vercel/
+.netlify/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and cache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.parcel-cache/
+.turbo/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local Codex/agent state
+.codex/
+.agents/
+
+# Source materials not needed in the public website repository
+AdobeStock_*.jpeg
+Gemini_Generated_Image_*.png
+AdobeStock_734937190/
+CHONHGDAMHADAKANRISALON_IMAGEDATA/
+CHONHGDAMHADAKANRISALON_IMAGEDATA.zip
+logo.png/
+logo.htme.svg/
+*.docx
+*.txt
+*.zip
+*.mp4
+*.prproj
+
+# Unused generated site assets
+site/assets/before-after.jpg
+site/assets/hero-skin.jpg
