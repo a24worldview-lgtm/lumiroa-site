@@ -237,14 +237,17 @@ a {
 .visual-break h2,
 .access h2 {
   margin: 0;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, Georgia, serif;
-  font-weight: 400;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   line-height: 1.22;
 }
 
 .hero h1 {
   max-width: 860px;
   font-size: clamp(46px, 5.65vw, 78px);
+  font-weight: 700;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 
 .hero h1 span {
@@ -300,7 +303,9 @@ a {
 
 .intro-band p {
   margin: 0;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   font-size: clamp(20px, 2.4vw, 30px);
   line-height: 1.4;
 }
@@ -407,8 +412,9 @@ a {
 .price-main h3,
 .membership h3 {
   margin: 8px 0 10px;
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-  font-weight: 400;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   line-height: 1.38;
 }
 
@@ -558,7 +564,9 @@ a {
 .closing-cta p {
   margin: 0;
   color: rgba(255, 253, 248, 0.78);
-  font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, Georgia, serif;
+  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   font-size: clamp(20px, 3vw, 32px);
   line-height: 1.5;
 }

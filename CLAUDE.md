@@ -69,8 +69,9 @@ Defined in `site/styles.css` under `:root`.
 ### Fonts
 
 - Body: `"Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", system-ui, sans-serif`
-- Headings: `"Hiragino Mincho ProN", "Yu Mincho", YuMincho, Georgia, serif`
-- English labels: `Georgia, "Times New Roman", serif`
+- Headings: `"Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif`（Google Fontsからweight 300/400/500/700を読み込み。letter-spacingは見出し0.08em、締めタグライン0.1em）
+- Heading weight hierarchy: ヒーローh1のみ`700`+`text-shadow`、h2とh3は背景の明暗を問わず`500`
+- English labels: `Georgia, "Times New Roman", serif`（eyebrow・ナビ・価格数字は変更しない）
 
 ### Breakpoints
 
