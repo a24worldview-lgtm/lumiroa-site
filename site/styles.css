@@ -58,10 +58,19 @@ a {
 .site-header.is-scrolled,
 .site-header.is-open {
   min-height: 72px;
+  backdrop-filter: blur(18px);
+}
+
+.site-header.is-scrolled {
+  color: var(--milk);
+  background: rgba(17, 24, 22, 0.68);
+  box-shadow: 0 12px 38px rgba(17, 24, 22, 0.18);
+}
+
+.site-header.is-open {
   color: var(--ink);
   background: rgba(255, 253, 248, 0.92);
   box-shadow: 0 12px 38px rgba(17, 24, 22, 0.08);
-  backdrop-filter: blur(18px);
 }
 
 .brand img {
@@ -71,7 +80,6 @@ a {
   transition: filter 260ms ease;
 }
 
-.site-header.is-scrolled .brand img,
 .site-header.is-open .brand img {
   filter: none;
 }
