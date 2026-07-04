@@ -769,3 +769,163 @@ address {
     display: flex;
   }
 }
+
+.opening {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #131009;
+}
+
+.opening.is-active {
+  display: flex;
+  animation: opening-fade-out 600ms ease 2900ms forwards;
+}
+
+body.is-opening {
+  overflow: hidden;
+}
+
+.opening-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: min(420px, 72vw);
+}
+
+.opening-logo {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  filter: blur(16px);
+}
+
+.opening.is-active .opening-logo {
+  animation: opening-logo-reveal 1400ms cubic-bezier(0.23, 1, 0.32, 1) 300ms forwards;
+}
+
+.opening-line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 169, 110, 0) 0%,
+    #c9a96e 18%,
+    #f0e0c0 50%,
+    #c9a96e 82%,
+    rgba(201, 169, 110, 0) 100%
+  );
+  transform: scaleX(0);
+  opacity: 0;
+}
+
+.opening.is-active .opening-line {
+  animation: opening-line-grow 900ms cubic-bezier(0.65, 0, 0.35, 1) 1400ms forwards;
+}
+
+.opening-spark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff8ea 0%, #f0e0c0 45%, rgba(201, 169, 110, 0) 100%);
+  box-shadow:
+    0 0 10px 2px rgba(240, 224, 192, 0.9),
+    0 0 22px 6px rgba(201, 169, 110, 0.5);
+  opacity: 0;
+}
+
+.opening.is-active .opening-spark {
+  animation: opening-spark-left 700ms ease-in 2150ms forwards;
+}
+
+.opening.is-active .opening-spark-right {
+  animation-name: opening-spark-right;
+}
+
+@keyframes opening-logo-reveal {
+  from {
+    opacity: 0;
+    filter: blur(16px);
+    transform: scale(1.04);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes opening-line-grow {
+  from {
+    transform: scaleX(0);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes opening-spark-left {
+  0% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    left: -1%;
+    opacity: 0;
+  }
+}
+
+@keyframes opening-spark-right {
+  0% {
+    left: 50%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 101%;
+    opacity: 0;
+  }
+}
+
+@keyframes opening-fade-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opening {
+    display: none !important;
+  }
+}
