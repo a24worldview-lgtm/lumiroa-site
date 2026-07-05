@@ -217,7 +217,9 @@ No build step is required.
 
 ### Static Hosting
 
-Upload the contents of `site/` to any static host. For GitHub Pages, either move the site files to the repository root, use a `docs/` directory, or add a simple GitHub Actions workflow that publishes `site/`.
+GitHub Pagesで公開中: https://a24worldview-lgtm.github.io/lumiroa-site/
+
+`main`へのpushで `.github/workflows/deploy-pages.yml` が `site/` を自動デプロイする（Pagesのbuild_typeはworkflow、リポジトリはpublic）。
 
 ## GitHub Publish Notes
 
