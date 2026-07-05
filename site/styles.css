@@ -250,9 +250,10 @@ a {
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 
-.hero h1 span {
-  display: block;
-  white-space: nowrap;
+.hero h1 img {
+  width: min(560px, 85vw);
+  height: auto;
+  filter: drop-shadow(0 2px 24px rgba(0, 0, 0, 0.45));
 }
 
 .hero-copy {
@@ -561,14 +562,10 @@ a {
   text-align: center;
 }
 
-.closing-cta p {
-  margin: 0;
-  color: rgba(255, 253, 248, 0.78);
-  font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  font-size: clamp(20px, 3vw, 32px);
-  line-height: 1.5;
+.closing-calligraphy {
+  width: min(520px, 80vw);
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .access-panel {
@@ -731,7 +728,27 @@ address {
 
   .hero {
     min-height: 86svh;
-    padding: 104px 20px 48px;
+    padding: 104px 20px 92px;
+  }
+
+  .hero-image {
+    object-position: 53% 14%;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .hero-actions .ghost {
+    display: none;
+  }
+
+  .hero-copy {
+    margin-top: 20px;
+  }
+
+  .hero-actions {
+    margin-top: 30px;
   }
 
   .hero-shade {
