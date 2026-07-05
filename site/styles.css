@@ -732,7 +732,15 @@ address {
   }
 
   .hero-image {
-    object-position: 53% 14%;
+    object-position: 78% 0%;
+  }
+
+  .hero h1 img {
+    width: min(560px, 72vw);
+  }
+
+  .eyebrow-extra {
+    display: none;
   }
 
   .hero-note {
@@ -748,7 +756,13 @@ address {
   }
 
   .hero-actions {
+    justify-content: center;
     margin-top: 30px;
+  }
+
+  .hero-actions .primary {
+    width: min(280px, 70vw);
+    min-height: 52px;
   }
 
   .hero-shade {
