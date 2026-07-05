@@ -732,7 +732,7 @@ address {
   }
 
   .hero-image {
-    object-position: 78% 0%;
+    object-position: center top;
   }
 
   .hero h1 img {
@@ -766,9 +766,7 @@ address {
   }
 
   .hero-shade {
-    background:
-      linear-gradient(0deg, rgba(11, 20, 19, 0.8) 0%, rgba(11, 20, 19, 0.3) 68%),
-      linear-gradient(90deg, rgba(11, 20, 19, 0.68) 0%, rgba(11, 20, 19, 0.18) 100%);
+    background: linear-gradient(0deg, rgba(11, 20, 19, 0.85) 0%, rgba(11, 20, 19, 0.62) 34%, rgba(11, 20, 19, 0) 66%);
   }
 
   .hero h1 {
